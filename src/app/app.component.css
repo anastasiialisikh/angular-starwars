@@ -1,0 +1,11 @@
+
+.container {
+  padding-top: 30px;
+}
+
+.card {
+  width: 350px;
+  height: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

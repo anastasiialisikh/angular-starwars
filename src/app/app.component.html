@@ -1,0 +1,20 @@
+<div class="container mat-app-background" fxLayout="row" fxLayoutAlign="center">
+  <div fxFlex="80" fxLayout="row wrap" fxLayout.xs="column">
+    <mat-card class="card" fxFlex="0 0 auto" *ngFor="let starship of starships">
+      <mat-card-header>
+        <mat-card-title>
+          {{starship.name}}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Model: {{starship.model}}</p>
+        <p>Pilots: {{starship.pilots.length}}</p>
+        <div *ngIf="starship.pilots.length">
+          <p *ngFor="let pilot of starship.pilots">
+            {{pilot.name}}
+          </p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
